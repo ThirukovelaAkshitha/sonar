@@ -7,8 +7,7 @@ import javax.validation.constraints.Pattern;
 public class BuyerDTO {
 	String buyerId;
 	@NotNull(message = "{buyer.name.absent}")
-    @Pattern(regexp="[A-Za-z]+( [A-Za-z]+)*", message="{buyer.name.invalid}")
-	String name;
+        String name;
 	@Pattern(regexp="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$", message = "{buyer.email.invalid}")
     @NotNull(message = "{buyer.email.absent}")
 	String email;

@@ -53,7 +53,7 @@ public class ProductController {
 		return prodtls;
 	}
 	
-	@RequestMapping(value="/product/id/{productId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value="/product/id/{productId}")
 	public ProductDTO getProductDetails(@PathVariable String productId){
 		ProductDTO prodtls=productService.getProductDetails(productId);
 		return prodtls;

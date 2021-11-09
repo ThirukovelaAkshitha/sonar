@@ -29,7 +29,7 @@ public class ProductController {
 	ProductService productService;
 	
 	
-	//private ProductDTO productDTO;
+	
 	
 	@GetMapping(value = "/product")
 	public List<Product> getAllProducts(){

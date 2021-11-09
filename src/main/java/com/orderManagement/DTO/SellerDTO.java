@@ -7,8 +7,7 @@ public class SellerDTO {
 
 	String sellerId;
 	@NotNull(message = "{seller.name.absent}")
-    @Pattern(regexp="[A-Za-z]+( [A-Za-z]+)*", message="{seller.name.invalid}")
-	String name;
+        String name;
 	@Pattern(regexp="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$", message = "{seller.email.invalid}")
     @NotNull(message = "{seller.email.absent}")
 	String email;
